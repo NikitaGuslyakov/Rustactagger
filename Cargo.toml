@@ -1,0 +1,13 @@
+[package]
+name = "rust_ac_tagger"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "rust_ac_tagger"
+crate-type = ["cdylib"]
+
+[dependencies]
+aho-corasick = "1.1.4"
+pyo3 = { version = "0.22", features = ["extension-module"] }
+
